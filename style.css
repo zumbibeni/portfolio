@@ -6,9 +6,11 @@ header {
   padding: 0px;
   grid-area: "a";
 }
-header p {
+main p {
   margin: 0px;
-  padding: 0px;
+  padding-top: 2rem;
+  text-align: center;
+
 }
 body {
   margin: 0px;
@@ -17,14 +19,30 @@ body {
   grid-template-areas: "a" "b" "c";
   grid-template-rows: max-content 1fr max-content;
   min-height: 100vh;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main {
   grid-area: "b";
   background-color: blueviolet;
-  
+  border: 1px solid black;
 }
 footer {
   grid-area: "c";
   height: 100px;
   background-color: blue;
+}
+
+img {
+  max-width: 100%;
+}
+.gombok{
+border:2px solid black ;
+line-height: 3rem;
+text-align: left;
+display: inline-block;
+padding: 1rem, 3rem;
+cursor: pointer;
+background-color: rgb(24, 21, 16);
+user-select: none;
 }
